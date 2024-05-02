@@ -20,7 +20,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
       
     - name: Build Docker image
-      run: docker build -t yourusername/sample-node-app:${{ github.ref_slug }} .
+      run: docker build -t brijeshdhanani/sample-node-app:${{ github.ref_slug }} .
       
     - name: Push Docker image
-      run: docker push yourusername/sample-node-app:${{ github.ref_slug }}
+      run: docker push brijeshdhanani/sample-node-app:${{ github.ref_slug }}
